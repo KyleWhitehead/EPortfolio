@@ -17,6 +17,14 @@
       });
    })();
 </script>
+<script>
+    document.addEventListener("DomContentLoaded", () => {
+        const yearEl = document.getElementById("current-year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    })
+</script>
 </head>
 <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
@@ -215,7 +223,7 @@
                     RESUME
                     </a>
             </div>
-            <div class="footer__copyright">Copyright &copy; {getYearById('current-year')} Kyle Whitehead. All rights reserved.</div>
+            <div class="footer__copyright">Copyright &copy; <span id="current-year"></span> Kyle Whitehead. All rights reserved.</div>
         </div>
         </div>
     </footer>
