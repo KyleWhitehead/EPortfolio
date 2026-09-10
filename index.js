@@ -53,8 +53,3 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal--open";
 }
-
-function getYearById(id) {
-    const yearElement = document.getElementById(id);
-    return yearElement.textContent;
-}
