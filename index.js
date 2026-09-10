@@ -53,3 +53,10 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal--open";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const currentYear = document.getElementById("current-year");
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+});
