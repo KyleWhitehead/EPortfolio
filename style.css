@@ -494,6 +494,18 @@ MODAL STYLES
     margin-bottom: 60px;
 }
 
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.project {
+    width: calc(50% - 12px);
+    min-width: 280px;
+}
+
 .project__img {
     width: 100%;
     transition: all 600ms ease;
@@ -680,6 +692,11 @@ SHAPES
     }
     nav__link:first-child {
         display: none;
+    }
+
+    .project {
+        width: 100%;
+        min-width: 0;
     }
 
     .project__description--para {
